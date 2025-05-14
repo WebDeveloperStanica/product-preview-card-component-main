@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    width: 100%;
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    max-width: 600px;
+    margin: 300px auto;
+    /* border-radius: 20px; */
+}
+
+.img-text {
+    
+}
+
+.img img{
+     width: 320px;
+     object-fit: cover;
+     border-radius: 10px 0 0 10px;
+     height: 500px;
+}
+
+/* .img {
+     width: 50%;
+     object-fit: cover;
+     height: 500px;
+     display: block;
+} */
+
+.text {
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+    height: 500px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: small;
+    font-weight: 400;
+     color: hsl(228, 12%, 48%);
+     margin-bottom: 20px;
+     letter-spacing: 4px;
+}
+
+p {
+    font-weight: 400;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 30px;
+}
+
+.price {
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        font-size: 30px;
+        color: hsl(158, 36%, 37%);
+}
+
+.price span {
+    color: hsl(228, 12%, 48%);
+    margin-left: 30px;
+    font-family: "Red Hat Text", sans-serif;
+    font-size: medium;
+    text-decoration: line-through;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+button img {
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: hsl(158, 42%, 18%);
+    cursor: pointer;
+}
+
+.attribution {
+    clear: both;
+    text-align: center;
+    font-size: larger;
+    font-weight: 400;
+}
+
+
+@media (max-width: 480px) {
+
+    .container {
+    flex-direction: column;
+    width: 90%;
+    margin: 100px auto;
+}
+.img img{
+    content: url(./images/image-product-mobile.jpg);
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: -10px;
+}
+.text {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.price {
+    font-size: 3rem;
+}
+
+button {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button img {
+    margin-right: 16px;
+    width: 20px;
+}
+}
